@@ -1,0 +1,57 @@
+
+<ChangeFeaturePromo_Request xmlns="http://www.alltel.com/EAM_ChangeFeaturePromo_00">
+    <WBI_TRAN_ID xmlns="">pXXXXXXX_080115_000001 </WBI_TRAN_ID>
+    <EAM_TransactionInfo xmlns="">
+        <ACCT_TRAN_TYPE_ID>pXXXXXXX_080115_000001</ACCT_TRAN_TYPE_ID>
+        <ACCT_TRAN_TYPE>ChangeProductService</ACCT_TRAN_TYPE>
+        <ACCT_TRAN_START_TS>20080115193157</ACCT_TRAN_START_TS>
+    </EAM_TransactionInfo>
+    <EAM_AccountInfo xmlns="">
+        <EAM_GeneralAcctInfo>
+            <ACCT_NBR>1101635694</ACCT_NBR>
+            <APPL_BILL_SITE>395</APPL_BILL_SITE>
+            <BILL_APPL_ID>V2</BILL_APPL_ID>
+        </EAM_GeneralAcctInfo>
+        <EAM_NoteInfo>					 Beginning of first note.  The first note is ignored so set fields to dummy
+            <NOTE_LEVEL_CD>dummy</NOTE_LEVEL_CD>
+            <MDN> dummy </MDN>
+            <NOTE_REASON_CD> dummy </NOTE_REASON_CD>
+            <NOTE_DT> dummy </NOTE_DT>
+            <NOTE_BODY>dummy</NOTE_BODY>
+        </EAM_NoteInfo>
+        <EAM_NoteInfo>
+            <NOTE_LEVEL_CD>S</NOTE_LEVEL_CD>
+            <MDN>9039410938</MDN>
+            <NOTE_REASON_CD>ADJ</NOTE_REASON_CD>
+            <NOTE_DT>07292007</NOTE_DT>
+            <NOTE_BODY>Added feature BWtest2</NOTE_BODY>
+        </EAM_NoteInfo>
+        <EAM_NoteInfo>
+            <NOTE_LEVEL_CD>S</NOTE_LEVEL_CD>
+            <MDN>9039410938</MDN>
+            <NOTE_REASON_CD>ADJ</NOTE_REASON_CD>
+            <NOTE_DT>07292007</NOTE_DT>
+            <NOTE_BODY>Added feature BWtest3</NOTE_BODY>
+        </EAM_NoteInfo>
+        <EAM_GeneralSubInfo>
+            <MDN>9039301050</MDN>
+            <MIN>9039301050</MIN>
+            <EAM_CommEntityInfo>
+                <SALES_ID>CHUF0</SALES_ID>
+                <DIST_CHAN>CORP</DIST_CHAN>
+                <LOC_CD>CHXXX</LOC_CD>
+            </EAM_CommEntityInfo>
+        </EAM_GeneralSubInfo>
+        <EAM_FeatureInfo>
+            <ACTN_CD>U</ACTN_CD>
+            <FEAT_CD>10SS</FEAT_CD>
+            <FEAT_DESCR>10SS AT</FEAT_DESCR>
+            <PERIOD_START_DT>07292007</PERIOD_START_DT>
+            <PERIOD_END_DT>07292007</PERIOD_END_DT>
+            <QTY></QTY>
+            <PROD_COST_AMT></PROD_COST_AMT>
+            <PROD_RECUR_IND>Y</PROD_RECUR_IND>
+        </EAM_FeatureInfo>
+    </EAM_AccountInfo>
+</ChangeFeaturePromo_Request>
+ 

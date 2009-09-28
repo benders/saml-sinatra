@@ -1,0 +1,11 @@
+#! /bin/bash
+
+CLASSPATH='.'
+
+for jar in `ls $3/lib/*.jar`
+do
+  CLASSPATH=$CLASSPATH:$jar
+done
+
+java -cp $CLASSPATH:$3/dist/eallookup.jar com.alltel.eal.SamlManager $1 $2
+

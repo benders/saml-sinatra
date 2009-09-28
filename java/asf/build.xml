@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<project name="EALLookup" default="default" basedir=".">
+
+	<description>
+            description
+    </description>
+
+	<target name="clean">
+		<delete dir="temp" />
+	</target>
+
+	<target name="init">
+		<mkdir dir="dist" />
+		<mkdir dir="temp" />
+	</target>
+
+	<target name="default" depends="clean, init" description="--> description">
+		<javac srcdir="src" destdir="temp" debug="on">
+			<classpath>
+				<fileset dir="lib">
+					<include name="*.jar" />
+				</fileset>
+			</classpath>
+		</javac>
+		<jar destfile="dist/saml_factory.jar" basedir="temp" />
+	</target>
+</project>

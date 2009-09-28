@@ -1,0 +1,11 @@
+#! /bin/bash
+
+CLASSPATH='.'
+
+for jar in `ls ../lib/*.jar`
+do
+  CLASSPATH=$CLASSPATH:$jar
+done
+
+./jsvc -debug -outfile foo.txt com.alltel.eal.SamlDaemon
+
