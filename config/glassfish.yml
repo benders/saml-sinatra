@@ -5,34 +5,34 @@
 #
 
 # application environment. Default value development
-environment: development
+#environment: development
 
 
 # HTTP configuration
-http:
-
-    # port
-    port: 7700
-
-    # context root. The default value is '/'
-    contextroot: /
+# http:
+# 
+#     # port
+#     port: 7700
+# 
+#     # context root. The default value is '/'
+#     contextroot: /
 
 
 #Logging configuration
-log:
-
-    # Log file location. Default log file is log/<environment>.log. For 
-    # example, if you are running in development environment, then the log 
-    # file would be log/development.log.
-    #
-    # The log-file value must be either an absolute path or relative to your 
-    # application directory.
-    
-    #log-file:
-
-    # Logging level. Log level 0 to 7. 0:OFF, 1:SEVERE, 2:WARNING,
-    # 3:INFO (default), 4:FINE, 5:FINER, 6:FINEST, 7:ALL.
-    log-level: 7
+# log:
+# 
+#     # Log file location. Default log file is log/<environment>.log. For 
+#     # example, if you are running in development environment, then the log 
+#     # file would be log/development.log.
+#     #
+#     # The log-file value must be either an absolute path or relative to your 
+#     # application directory.
+#     
+#     #log-file:
+# 
+#     # Logging level. Log level 0 to 7. 0:OFF, 1:SEVERE, 2:WARNING,
+#     # 3:INFO (default), 4:FINE, 5:FINER, 6:FINEST, 7:ALL.
+#     log-level: 7
 
 #
 # Runtime configuration
@@ -62,14 +62,14 @@ jruby-runtime-pool:
 daemon:
     # Run GlassFish as a daemon. GlassFish may not run as a daemon process
     # on all platforms. Default value is false.
-    enable: false
+    # enable: false
 
     # File where the process id of GlassFish is saved when run as daemon.
     # The location must be either an absolute path or relative to your 
     # application directory.
     # default PID file is tmp/pids/glassfish-<PID>.pid
     
-    #pid:
+    # pid: tmp/pids/glassfish.pid
 
     # Like JRuby GlassFish gem runs on Java Virtual Machine. You can pass
     # JVM properties using 'jvm-options' property. The JVM options must be
