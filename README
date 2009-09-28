@@ -1,0 +1,5 @@
+If you are having trouble running under Glassfish, but it runs fine as script/server, the problem may be that the Glassfish Gem comes with a outdated XML library.  To force Glassfish to use the Xerces XML instead, launch with the CLASSPATH environment variable set:
+
+CLASSPATH=.:java/asf/lib/xercesImpl-2.9.1.jar jruby -S glassfish .
+
+And ensure that the JVM options include "-Djavax.xml.parsers.DocumentBuilderFactory=org.apache.xerces.jaxp.DocumentBuilderFactoryImpl"
